@@ -1,0 +1,173 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+a{
+    text-decoration: none;
+    
+}
+.padre{
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.header{
+    background-image: url(fondoalesio.jpeg);
+    background-position: center;
+    background-attachment: contain;
+    background-size: cover;
+    display: flex;
+    flex-flow: column nowrap;
+    
+   
+} 
+    .menu{
+        background: rgba(0, 0, 0, .5);
+        display: flex;
+        flex-flow: row nowrap;
+        height: 60px;
+        align-items: center;
+        border-bottom: 1px solid rgba(189, 183, 107, .5);
+        position: sticky;
+        top: 0%;
+    } 
+        .logo{
+           
+            flex: 1 1 auto;
+            height: 40px;
+            
+
+
+        }
+            .logo a{
+                color: white;
+                font-size: 30px;
+                
+            }
+            .logo a:hover{
+                color:darkkhaki;
+            }
+        .nav{
+           
+            flex: 5 1 auto;
+            height: 20px;
+            
+
+        }
+            .nav a{
+                color:#fff;
+                font-size: 8px;
+                text-transform: uppercase;
+                padding: 0 10px;
+                letter-spacing: 4px;
+                
+            }
+            .nav a:hover{
+                color: darkkhaki;
+            }
+        .social{
+            display: flex;
+            flex: 1 1 auto;
+            height: 30px;
+            
+        }
+            .social a{
+                font-size: 18px;
+                color: white;
+                padding: 0 5px;
+                
+            }
+            .social a:hover{
+                color: darkkhaki;
+            }
+    .texto-general{
+       
+        height: 580px;
+        display: flex;
+        align-items: flex-end;
+        padding: 30px;
+    }   
+        h1{
+            font-family: 'Lora', serif;
+            color:darkkhaki;
+            font-weight: 300;
+            text-align: center;
+            line-height: 1.6;
+
+        }
+        
+.section{
+    background: black;
+    display: flex;
+    
+}
+    .articulos{
+       
+        background: #e7d4b5;
+        flex: 2 1 auto;
+    }
+        
+        .article{
+            display: flex;
+            flex: 1 1 40%;
+            color: #444;
+            font-size: 13px;
+            letter-spacing: 1px;
+            border-bottom: 1px solid rgb(116, 114, 114);
+           
+        }
+           
+        .article img{
+            padding: 30px;
+            width: 40%;
+        }
+        .contacto{
+            border-bottom: 1px solid rgb(116, 114, 114);
+            text-align: center;
+        }
+    .aside{
+        background: #f6e6cb;
+        flex: 1 1 auto;
+    }
+        .publicidad{
+            text-align: center;
+        }
+            .publicidad h3{
+                margin: 20px;
+            }
+            .publicidad a{
+                margin-left: 33px;
+            }
+.footer{
+    background: #a0937d; 
+}
+    .pie{
+        background: #a0937d;
+        text-align: center;
+    }
+    .pie a{
+        color: black;
+    }
+@media all and (max-width: 800px){
+    .section{
+        flex-direction: column;
+    }
+    .aside{
+        display: flex;
+        justify-content: center;
+    }
+
+    .menu{
+        flex-direction: column;
+        height: auto;
+        
+    }
+        .logo{
+            margin: 10px;
+        }
+}
